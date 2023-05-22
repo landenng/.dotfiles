@@ -7,7 +7,7 @@ let mapleader = "\<Space>"
 " Load vundle
 set nocompatible
 filetype off
-set rtp+=~/.config/nvim/base16-builder-php/
+set rtp+=~/.config/nvim/base16-builder-php/schemes/
 
 " Load plugins
 call plug#begin()
@@ -61,7 +61,7 @@ end
 " deal with colors
 set background=dark
 let base16colorspace=256
-let g:base16_shell_path="~/.config/nvim/base16-builder-php/"
+let g:base16_shell_path="~/.config/nvim/base16-builder-php/colors/shell/"
 colorscheme holo
 syntax on
 hi Normal ctermbg=NONE

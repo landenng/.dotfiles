@@ -1,0 +1,23 @@
+scheme: holo
+author: holo
+base00: 101010 # background
+base01: 171717 # color column
+base02: ffffff # highlight
+base03: 595858 # comments
+base04: ffff00 # (bright yellow) ?????????
+base05: cdccdb # terminal foreground
+base06: 00ff00 # (bright green) ???????????
+base07: ff0000 # (bright red) ???????
+base08: 4e52d9 # return & constructs; also keys in this file
+base09: ff00f7 # ints, bools, some weird stuff in rust
+base0A: b40079 # data types
+base0B: 8cf2ff # strings and executables
+base0C: a166ff # big comments in rust that arent comments
+base0D: f260c2 # directories, functions
+base0E: c12aff # conditionals
+base0F: 2a74ff # escape characters
+
+# For reference on all colors as described, use rust.
+# Below are colors that are nice but possibly aren't used.
+# 2a74ff (blue)
+# b71414 (red)

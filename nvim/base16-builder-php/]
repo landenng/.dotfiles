@@ -1,0 +1,18 @@
+scheme: holo
+author: holo
+base00: 0b0a0a # background
+base01: 00deff # import
+base02: ffff00
+base03: 595858 # comments
+base04: e500ff
+base05: cdccdb # terminal foreground
+base06: ffff00
+base07: ff0000
+base08: 2a343a # color column
+base09: da19c6
+base0A: a6a6a6 # line numbers
+base0B: 6f3be1 # executables
+base0C: 595858 # 
+base0D: 00ffff # directories
+base0E: 0fffa3 # strings
+base0F: ffff00

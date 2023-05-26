@@ -394,7 +394,7 @@ exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/astronaut-pink-nebula.png
+exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/blackhole.png
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
@@ -489,10 +489,12 @@ set $darkgrey		#383c4a
 set $grey		    #b0b5bd
 set $mediumgrey		#8b8b8b
 set $yellowbrown	#e1b700
+set $offwhite       #fffccd
+set $babyblue       #c3eaff
 
 # define colors for windows:
 #class		             	border		bground		text		indicator	    child_border
-client.focused		    	$lightblue	$darkblue	$white		$purple         $purple
+client.focused		    	$lightblue	$darkblue	$white		$babyblue       $babyblue
 client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	    $darkblue
 client.focused_inactive		$darkblue	$darkblue	$grey		$black		    $black
 client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
@@ -501,6 +503,7 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 # bar settings (input comes from i3blocks) #
 ############################################
 
+############### UNTAB THIS TO ADD I3 BAR BACK ###########################
 # Start i3bar to display a workspace bar
 # (plus the system information i3status finds out, if available)
 # bar {
@@ -538,12 +541,12 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 # #08052be6 --> e6=90%
 
 # bar {
-#	font pango: Noto Sans Regular 10
-#	status_command i3blocks -c ~/.config/i3/i3blocks-2.conf
-#	i3bar_command i3bar --transparency
-#	output HDMI-0
-#	position bottom
-#
+#   font pango: Noto Sans Regular 10
+#   status_command i3blocks -c ~/.config/i3/i3blocks-2.conf
+#   i3bar_command i3bar --transparency
+#   output HDMI-0
+#   position bottom
+
 # When strip_workspace_numbers is set to yes,
 # any workspace that has a name of the form
 # “[n][:][NAME]” will display only the name.

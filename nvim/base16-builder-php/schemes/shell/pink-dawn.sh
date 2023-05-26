@@ -1,8 +1,8 @@
 #!/bin/sh
 # base16-shell (https://github.com/chriskempson/base16-shell)
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
-# holo scheme by holo
-export BASE16_THEME=holo
+# pink-dawn scheme by holo
+export BASE16_THEME=pink-dawn
 
 color00="10/10/10" # Base 00 - Black
 color01="4e/52/d9" # Base 08 - Red

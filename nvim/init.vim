@@ -62,7 +62,7 @@ end
 set background=dark
 let base16colorspace=256
 let g:base16_shell_path="~/.config/nvim/base16-builder-php/colors/shell/"
-colorscheme holo
+colorscheme gravity
 syntax on
 hi Normal ctermbg=NONE
 

@@ -2,7 +2,7 @@
 
 " base16-vim (https://github.com/chriskempson/base16-vim)
 " by Chris Kempson (http://chriskempson.com)
-" holo scheme by holo
+" pink-dawn scheme by holo
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
@@ -10,7 +10,7 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has("gui_running")
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/base16-holo.sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/base16-pink-dawn.sh"
   endif
 endif
 
@@ -33,20 +33,20 @@ let s:gui07        = "ff0000"
 let g:base16_gui07 = "ff0000"
 let s:gui08        = "4e52d9"
 let g:base16_gui08 = "4e52d9"
-let s:gui09        = "ff00f7"
-let g:base16_gui09 = "ff00f7"
-let s:gui0A        = "b40079"
-let g:base16_gui0A = "b40079"
-let s:gui0B        = "8cf2ff"
-let g:base16_gui0B = "8cf2ff"
-let s:gui0C        = "a166ff"
-let g:base16_gui0C = "a166ff"
-let s:gui0D        = "f260c2"
-let g:base16_gui0D = "f260c2"
-let s:gui0E        = "c12aff"
-let g:base16_gui0E = "c12aff"
-let s:gui0F        = "2a74ff"
-let g:base16_gui0F = "2a74ff"
+let s:gui09        = "4d3c87"
+let g:base16_gui09 = "4d3c87"
+let s:gui0A        = "2239d8"
+let g:base16_gui0A = "2239d8"
+let s:gui0B        = "e3dcac"
+let g:base16_gui0B = "e3dcac"
+let s:gui0C        = "43628a"
+let g:base16_gui0C = "43628a"
+let s:gui0D        = "9ed6dd"
+let g:base16_gui0D = "9ed6dd"
+let s:gui0E        = "6779f6"
+let g:base16_gui0E = "6779f6"
+let s:gui0F        = "fdc46a"
+let g:base16_gui0F = "fdc46a"
 
 " Terminal color definitions
 let s:cterm00        = "00"
@@ -101,19 +101,19 @@ endif
 if has("nvim")
   let g:terminal_color_0 =  "#101010"
   let g:terminal_color_1 =  "#4e52d9"
-  let g:terminal_color_2 =  "#8cf2ff"
-  let g:terminal_color_3 =  "#b40079"
-  let g:terminal_color_4 =  "#f260c2"
-  let g:terminal_color_5 =  "#c12aff"
-  let g:terminal_color_6 =  "#a166ff"
+  let g:terminal_color_2 =  "#e3dcac"
+  let g:terminal_color_3 =  "#2239d8"
+  let g:terminal_color_4 =  "#9ed6dd"
+  let g:terminal_color_5 =  "#6779f6"
+  let g:terminal_color_6 =  "#43628a"
   let g:terminal_color_7 =  "#cdccdb"
   let g:terminal_color_8 =  "#595858"
   let g:terminal_color_9 =  "#4e52d9"
-  let g:terminal_color_10 = "#8cf2ff"
-  let g:terminal_color_11 = "#b40079"
-  let g:terminal_color_12 = "#f260c2"
-  let g:terminal_color_13 = "#c12aff"
-  let g:terminal_color_14 = "#a166ff"
+  let g:terminal_color_10 = "#e3dcac"
+  let g:terminal_color_11 = "#2239d8"
+  let g:terminal_color_12 = "#9ed6dd"
+  let g:terminal_color_13 = "#6779f6"
+  let g:terminal_color_14 = "#43628a"
   let g:terminal_color_15 = "#ff0000"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
@@ -125,19 +125,19 @@ elseif has("terminal")
   let g:terminal_ansi_colors = [
         \ "#101010",
         \ "#4e52d9",
-        \ "#8cf2ff",
-        \ "#b40079",
-        \ "#f260c2",
-        \ "#c12aff",
-        \ "#a166ff",
+        \ "#e3dcac",
+        \ "#2239d8",
+        \ "#9ed6dd",
+        \ "#6779f6",
+        \ "#43628a",
         \ "#cdccdb",
         \ "#595858",
         \ "#4e52d9",
-        \ "#8cf2ff",
-        \ "#b40079",
-        \ "#f260c2",
-        \ "#c12aff",
-        \ "#a166ff",
+        \ "#e3dcac",
+        \ "#2239d8",
+        \ "#9ed6dd",
+        \ "#6779f6",
+        \ "#43628a",
         \ "#ff0000",
         \ ]
 endif
@@ -145,7 +145,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "base16-holo"
+let g:colors_name = "base16-pink-dawn"
 
 " Highlighting function
 " Optional variables are attributes and guisp

@@ -3,7 +3,7 @@
 "
 " This is effectively a simplified version of init.vim
 " Download with:
-"     wget -O ~/.vimrc https://raw.githubusercontent.com/funnyboy-roks/personal-config/main/.vimrc
+"     wget -O ~/.vimrc https://raw.githubusercontent.com/landennguyen/personal-config/main/.vimrc
 
 let mapleader = "\<Space>"
 

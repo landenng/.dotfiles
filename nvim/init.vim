@@ -62,7 +62,7 @@ end
 set background=dark
 let base16colorspace=256
 let g:base16_shell_path="~/.config/nvim/base16-builder-php/colors/shell/"
-colorscheme pink-dawn
+colorscheme holo
 syntax on
 hi Normal ctermbg=NONE
 
@@ -367,8 +367,6 @@ set listchars=nbsp:¬,extends:»,precedes:«,trail:•
 " ============================================================================= "
 " # Keyboard shortcuts "
 " ============================================================================= "
-" ; as : "
-nnoremap ; :
 
 " Ctrl+j and Ctrl+k as Esc "
 " Ctrl-j is a little awkward unfortunately: "

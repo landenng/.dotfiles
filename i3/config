@@ -394,7 +394,7 @@ exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/astronaut-pink-nebula.png
+exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/satellite.png
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
@@ -484,17 +484,18 @@ set $lightblue		#5294e2
 set $urgentred		#e53935
 set $white		    #ffffff
 set $black		    #000000
-set $purple		    #e360f2
+set $pinkdawn	    #e360f2
 set $darkgrey		#383c4a
 set $grey		    #b0b5bd
 set $mediumgrey		#8b8b8b
 set $yellowbrown	#e1b700
 set $offwhite       #fffccd
 set $babyblue       #c3eaff
+set $holoblue       #40f2f1
 
 # define colors for windows:
 #class		             	border		bground		text		indicator	    child_border
-client.focused		    	$lightblue	$darkblue	$white		$purple         $purple
+client.focused		    	$lightblue	$darkblue	$white		$holoblue       $holoblue
 client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	    $darkblue
 client.focused_inactive		$darkblue	$darkblue	$grey		$black		    $black
 client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown

@@ -1,4 +1,4 @@
-scheme: pink-dawn
+scheme: holo
 author: holo
 base00: 101010 # background
 base01: 171717 # color column
@@ -9,13 +9,13 @@ base05: cdccdb # terminal foreground
 base06: 00ff00 # (bright green) ???????????
 base07: ff0000 # (bright red) ???????
 base08: 4e52d9 # return & constructs; also keys in this file
-base09: 4d3c87 # ints, bools, some weird stuff in rust
-base0A: 2239d8 # data types
-base0B: e3dcac # strings and executables
-base0C: 43628a # big comments in rust that arent comments
-base0D: 9ed6dd # directories, functions
-base0E: 6779f6 # conditionals
-base0F: fdc46a # escape characters
+base09: 6843f4 # ints, bools, some weird stuff in rust
+base0A: 083de3 # data types
+base0B: 5be5af # strings and executables
+base0C: 6b85ff # big comments in rust that arent comments
+base0D: 40f2f1 # directories, functions
+base0E: 408bff # conditionals
+base0F: 6c2ee2 # escape characters
 
 # For reference on all colors as described, use rust.
 # Below are colors that are nice but possibly aren't used.

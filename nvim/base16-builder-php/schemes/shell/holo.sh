@@ -6,7 +6,7 @@ export BASE16_THEME=holo
 
 color00="10/10/10" # Base 00 - Black
 color01="4e/52/d9" # Base 08 - Red
-color02="5b/e5/af" # Base 0B - Green
+color02="5b/e5/8f" # Base 0B - Green
 color03="08/3d/e3" # Base 0A - Yellow
 color04="40/f2/f1" # Base 0D - Blue
 color05="40/8b/ff" # Base 0E - Magenta

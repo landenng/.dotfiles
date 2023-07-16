@@ -598,6 +598,9 @@ bindsym $mod+x exec flameshot gui
 ### screen placement
 exec --no-startup-id xrandr --output HDMI-A-0 --auto --left-of eDP
 
+# command to run to mirror display connected to HDMI port
+# xrandr --output HDMI-A-0 --auto --same-as eDP
+
 ### setting picom config path
 exec picom --config ~/.config/picom/picom.conf
 exec_always /home/holo/.config/i3/polybar/launch.sh

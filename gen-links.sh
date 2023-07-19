@@ -16,9 +16,10 @@ function mkln () {
 }
 
 mkln "i3"                  "$HOME/.config/i3"
-mkln ".vimrc"              "$HOME/.vimrc"
 mkln "kitty"               "$HOME/.config/kitty"
 mkln "nvim"                "$HOME/.config/nvim"
 mkln "picom"               "$HOME/.config/picom"
 mkln "rofi"	   	           "$HOME/.config/rofi"
+mkln ".zsh"                "$HOME/.zsh"
+mkln ".vimrc"              "$HOME/.vimrc"
 mkln ".zshrc"              "$HOME/.zshrc"

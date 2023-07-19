@@ -6,8 +6,7 @@
 #
 # iconic font icon search: https://fontawesome.com/v4.7/cheatsheet/
 #
-# --> to update this run the following command (will backup existing setup file)
-# wget --backups=1 https://raw.githubusercontent.com/endeavouros-team/endeavouros-i3wm-setup/main/.config/i3/config -P ~/.config/i3/
+# --> to update this run the following command (will backup existing setup file) # wget --backups=1 https://raw.githubusercontent.com/endeavouros-team/endeavouros-i3wm-setup/main/.config/i3/config -P ~/.config/i3/
 #
 # Endeavouros-i3 config file
 # Source for complete framework of our i3 config and theming here: https://github.com/endeavouros-team/endeavouros-i3wm-setup
@@ -22,7 +21,7 @@
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango: Noto Sans Regular 10
+font pango: Noto Sans Regular 11
 
 # set the mod key to the winkey:
 set $mod Mod4
@@ -394,7 +393,7 @@ exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/satellite.png
+exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/pastel-sky.jpg
 
 # set powersavings for display:
 # exec --no-startup-id xset s 480 dpms 600 600 600

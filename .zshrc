@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 PATH="$PATH:$HOME/.local/bin/"
 PATH="$PATH:$HOME/.cargo/bin/"
 print_before_the_prompt () {
@@ -143,19 +150,17 @@ bg () {
 	exec nohup $@ &> /dev/null &
 }
 
-source ~/.config/nvim/base16-builder-php/schemes/shell/holo.sh
+source ~/.config/nvim/base16-builder-php/schemes/shell/catppuccin.sh
 
 # -------
 # Aliases
 # -------
 alias ls="ls --color=always"
-alias l="ls -Al --color=always"
-alias lsa="ls -A --color=always"
-alias lha="ls -lhA --color=always"
-alias please="sudo"
+alias ll="exa -l -g --icons"
+alias lla="ll -a"
+alias vim="nvim"
 alias python="python3"
 alias mkdir="mkdir -pv"
-
 
 # ----------------------
 # Git Aliases
@@ -173,4 +178,17 @@ alias gpsh='git push'
 alias gss='git status -s'
 alias gsa='git-stats -a'
 
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# ---------------
+# zsh plugins
+# ---------------
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+source /home/holo/.zsh/catppuccin_macchiato-zsh-syntax-highlighting.zsh
+source /home/holo/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source /home/holo/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

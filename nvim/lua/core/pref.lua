@@ -29,6 +29,8 @@ vim.wo.colorcolumn = '80'
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.keymap.set('n', 'H', '^', { noremap = true })
 vim.keymap.set('n', 'L', '$', { noremap = true })
+vim.keymap.set('n', 'th', ':bprev<enter>', { noremap = false })
+vim.keymap.set('n', 'tl', ':bnext<enter>', { noremap = false })
 
 -- centers search results
 vim.keymap.set('n', 'n', 'nzz', { noremap = true, silent = true })

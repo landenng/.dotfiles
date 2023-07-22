@@ -6,7 +6,7 @@ require('lualine').setup {
   sections = {
     lualine_a = {
       {
-        'filename',
+        'buffers',
         path = 1,
       }
     }

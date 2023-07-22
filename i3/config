@@ -21,7 +21,7 @@
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango: Noto Sans Regular 11
+font pango: Noto Sans Regular 12
 
 # set the mod key to the winkey:
 set $mod Mod4
@@ -391,10 +391,6 @@ exec --no-startup-id dex --autostart --environment i3
 # uncomment the next line, use arandr to setup displays and save the file as monitor:
 exec --no-startup-id ~/.screenlayout/monitor.sh
 
-# set wallpaper
-# exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/pastel-sky.jpg
-
 # set powersavings for display:
 # exec --no-startup-id xset s 480 dpms 600 600 600
 exec --no-startup-id xset s off -dpms
@@ -567,6 +563,10 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 #		urgent_workspace	$urgentred	$urgentred	$white		$purple
 #	}
 #}
+
+# set wallpaper
+# exec --no-startup-id sleep 2 && nitrogen --restore
+exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/pastel-sky.jpg
 
 #####################################
 # Application menu handled by rofi: #

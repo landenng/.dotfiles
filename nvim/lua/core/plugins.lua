@@ -1,4 +1,4 @@
--- This file is used to check if packer is installed on a machine.
+-- This is a bootstrap file is used to check if packer is installed on a machine.
 -- If it is not, it will automatically install packer and any plugins
 -- specified below.
 -- Found at https://github.com/wbthomason/packer.nvim#bootstrapping
@@ -24,11 +24,24 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
+
+  -- autocompletion and snippet integration
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'L3MON4D3/LuaSnip'
+
+  -- vs-code like snippets
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'rafamadriz/friendly-snippets'
+
+  -- fuzzy finder integration
   use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.0',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+
+  -- lsp integration
   use {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',

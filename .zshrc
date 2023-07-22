@@ -161,6 +161,7 @@ alias lla="ll -a"
 alias vim="nvim"
 alias python="python3"
 alias mkdir="mkdir -pv"
+alias fde="firefox-developer-edition"
 
 # ----------------------
 # Git Aliases

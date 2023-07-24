@@ -5,7 +5,10 @@ require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = {
     "lua_ls",
-    "pyright"
+    "pyright",
+    "html",
+    "cssls",
+    "tsserver"
   }
 })
 
@@ -32,4 +35,19 @@ require("lspconfig").lua_ls.setup {
 require("lspconfig").pyright.setup {
   on_attach = on_attach,
   filetypes = {"python"},
+}
+
+require("lspconfig").html.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+require("lspconfig").cssls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+require("lspconfig").tsserver.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
 }

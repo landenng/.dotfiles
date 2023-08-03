@@ -193,3 +193,5 @@ source /home/holo/.zsh/catppuccin_macchiato-zsh-syntax-highlighting.zsh
 source /home/holo/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source /home/holo/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+. /usr/share/z/z.sh

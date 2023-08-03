@@ -8,7 +8,8 @@ require("mason-lspconfig").setup({
     "pyright",
     "html",
     "cssls",
-    "tsserver"
+    "tsserver",
+    "jdtls"
   }
 })
 
@@ -48,6 +49,11 @@ require("lspconfig").cssls.setup {
 }
 
 require("lspconfig").tsserver.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+require("lspconfig").jdtls.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }

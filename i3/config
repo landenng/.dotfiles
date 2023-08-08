@@ -320,7 +320,7 @@ assign [class="discord"] $ws0
 assign [class="(?i)firefox"] $ws2
 assign [class="Thunar"] $ws8
 assign [class="code"] $ws3
-assign [class="jetbrains-idea-ce"] $ws3
+assign [class="jetbrains-idea"] $ws3
 assign [class="thunderbird"] $ws9
 #assign [class="TelegramDesktop"] $ws5
 
@@ -566,7 +566,7 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/pokemon-go-teams.jpg
+exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/dark-espeon.png
 
 #####################################
 # Application menu handled by rofi: #
@@ -595,7 +595,7 @@ bindsym $mod+t exec rofi -show window \
 #		-config ~/.config/rofi/rofidmenu.rasi
 
 # flameshot keybind
-bindsym $mod+x exec flameshot gui
+bindsym $mod+x exec flameshot gui -c -p ~/pictures/screenshot.png
 
 ### screen placement
 exec --no-startup-id xrandr --output HDMI-A-0 --auto --left-of eDP

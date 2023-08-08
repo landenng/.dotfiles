@@ -27,8 +27,10 @@ vim.wo.colorcolumn = '80'
 
 -- keybindings
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
-vim.keymap.set('n', 'H', '^', { noremap = true })
-vim.keymap.set('n', 'L', '$', { noremap = true })
+vim.keymap.set('n', 'H', '^', { noremap = false })
+vim.keymap.set('n', 'L', '$', { noremap = false })
+vim.keymap.set('n', 'dH', 'd^', { noremap = false })
+vim.keymap.set('n', 'dL', 'd$', { noremap = false })
 vim.keymap.set('n', 'th', ':bprev<enter>', { noremap = false })
 vim.keymap.set('n', 'tl', ':bnext<enter>', { noremap = false })
 

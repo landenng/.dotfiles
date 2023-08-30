@@ -1,3 +1,4 @@
+# dog
 source ~/.config/nvim/base16-builder-php/schemes/shell/catppuccin.sh
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.

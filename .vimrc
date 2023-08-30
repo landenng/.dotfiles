@@ -1,9 +1,6 @@
-" This is a very simple .vimrc that I can use on my servers where I don't want
-" to install neovim and my full config.
-"
 " This is effectively a simplified version of init.vim
 " Download with:
-"     wget -O ~/.vimrc https://raw.githubusercontent.com/landennguyen/personal-config/main/.vimrc
+"     wget -O ~/.vimrc https://raw.githubusercontent.com/landennguyen/dotfiles/main/.vimrc
 
 let mapleader = "\<Space>"
 

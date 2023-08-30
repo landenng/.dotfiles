@@ -1,3 +1,5 @@
+source ~/.config/nvim/base16-builder-php/schemes/shell/catppuccin.sh
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -150,11 +152,8 @@ bg () {
 	exec nohup $@ &> /dev/null &
 }
 
-source ~/.config/nvim/base16-builder-php/schemes/shell/catppuccin.sh
 
-# -------
 # Aliases
-# -------
 alias ls="ls --color=always"
 alias ll="exa -l -g --icons"
 alias lla="ll -a"
@@ -162,10 +161,9 @@ alias vim="nvim"
 alias python="python3"
 alias mkdir="mkdir -pv"
 alias fde="firefox-developer-edition"
+alias g++d="g++ -ggdb -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -o"
 
-# ----------------------
 # Git Aliases
-# ----------------------
 alias ga='git add'
 alias gaa='git add -A'
 alias gas='git add src/'
@@ -195,3 +193,7 @@ source /home/holo/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/holo/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 . /usr/share/z/z.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

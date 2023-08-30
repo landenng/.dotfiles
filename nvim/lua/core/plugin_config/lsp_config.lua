@@ -9,7 +9,8 @@ require("mason-lspconfig").setup({
     "html",
     "cssls",
     "tsserver",
-    "jdtls"
+    "jdtls",
+    "clangd"
   }
 })
 
@@ -54,6 +55,11 @@ require("lspconfig").tsserver.setup {
 }
 
 require("lspconfig").jdtls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+require("lspconfig").clangd.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }

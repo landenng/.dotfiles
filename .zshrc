@@ -6,6 +6,9 @@ fi
 ### Color Scheme Sourcing
 source ~/.config/nvim/schemes/shell/catppuccin.sh
 
+### Colors for exa and ls
+export LS_COLORS="$(vivid generate catppuccin-mocha)"
+
 ### Zim Configuration
 # use catppuccin macchiato color scheme for zsh syntax highlighting
 source ~/.zim/schemes/catppuccin_macchiato-zsh-syntax-highlighting.zsh

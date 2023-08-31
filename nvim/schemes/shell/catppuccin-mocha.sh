@@ -1,8 +1,8 @@
 #!/bin/sh
 # base16-shell (https://github.com/chriskempson/base16-shell)
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
-# catppuccin scheme by holo
-export BASE16_THEME=catppuccin
+# catppuccin-mocha scheme by holo
+export BASE16_THEME=catppuccin-mocha
 
 color00="1e/1e/2e" # Base 00 - Black
 color01="f3/8b/a8" # Base 08 - Red

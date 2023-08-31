@@ -4,7 +4,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 ### Color Scheme Sourcing
-source ~/.config/nvim/schemes/shell/catppuccin.sh
+source ~/.config/nvim/schemes/shell/catppuccin-mocha.sh
 
 ### Colors for exa and ls
 export LS_COLORS="$(vivid generate catppuccin-mocha)"

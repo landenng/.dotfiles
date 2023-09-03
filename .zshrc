@@ -11,7 +11,7 @@ export LS_COLORS="$(vivid generate catppuccin-mocha)"
 
 ### Zim Configuration
 # use catppuccin macchiato color scheme for zsh syntax highlighting
-source ~/.zim/schemes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
+source ~/.zim/schemes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 # use 'degit' tool by default
 zstyle ':zim:zmodule' use 'degit'

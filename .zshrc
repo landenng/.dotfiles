@@ -17,7 +17,7 @@ source ~/.zim/schemes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 zstyle ':zim:zmodule' use 'degit'
 ZIM_HOME=~/.zim
 
-# download zimfw plugin manager if missing
+# install zimfw plugin manager if missing
 if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
   curl -fsSL --create-dirs -o ${ZIM_HOME}/zimfw.zsh \
       https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
@@ -50,3 +50,6 @@ alias gss='git status -s'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Set BROWSER variable
+export BROWSER="firefox-developer-edition"

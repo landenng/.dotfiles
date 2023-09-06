@@ -19,6 +19,14 @@ local plugins = {
   'nvim-lualine/lualine.nvim',
   'nvim-treesitter/nvim-treesitter',
 
+  -- lsp integration
+  'williamboman/mason.nvim',
+  'williamboman/mason-lspconfig.nvim',
+  'neovim/nvim-lspconfig',
+
+  -- rust plugins
+  'simrat39/rust-tools.nvim',
+
   -- autocompletion and snippet integration
   'hrsh7th/nvim-cmp',
   'hrsh7th/cmp-nvim-lsp',
@@ -38,13 +46,6 @@ local plugins = {
     "nvim-telescope/telescope-file-browser.nvim",
     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   },
-
-  -- lsp integration
-  {
-    'williamboman/mason.nvim',
-    'williamboman/mason-lspconfig.nvim',
-    'neovim/nvim-lspconfig',
-  }
 }
 
 local opts = {}

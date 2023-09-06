@@ -24,9 +24,6 @@ local plugins = {
   'williamboman/mason-lspconfig.nvim',
   'neovim/nvim-lspconfig',
 
-  -- rust plugins
-  'simrat39/rust-tools.nvim',
-
   -- autocompletion and snippet integration
   'hrsh7th/nvim-cmp',
   'hrsh7th/cmp-nvim-lsp',

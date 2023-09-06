@@ -19,6 +19,9 @@ local plugins = {
   'nvim-lualine/lualine.nvim',
   'nvim-treesitter/nvim-treesitter',
 
+  -- rust
+  'simrat39/rust-tools.nvim',
+
   -- lsp integration
   'williamboman/mason.nvim',
   'williamboman/mason-lspconfig.nvim',

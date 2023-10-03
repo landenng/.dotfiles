@@ -34,7 +34,6 @@ alias vim="nvim"
 alias python="python3"
 alias mkdir="mkdir -pv"
 alias fde="firefox-developer-edition"
-alias g++d="g++ -ggdb -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -o"
 
 ### Git Aliases
 alias ga='git add'

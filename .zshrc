@@ -1,13 +1,8 @@
-### Powerlevel10k Instant Prompt
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 ### Color Scheme Sourcing
-source ~/.config/nvim/schemes/shell/catppuccin-mocha.sh
+source ~/.config/nvim/schemes/shell/rose-pine-moon.sh
 
 ### Colors for exa and ls
-export LS_COLORS="$(vivid generate catppuccin-mocha)"
+export LS_COLORS="$(vivid generate /usr/share/vivid/rose-pine-moon)"
 
 ### Zim Configuration
 # use catppuccin macchiato color scheme for zsh syntax highlighting
@@ -53,3 +48,8 @@ alias gss='git status -s'
 
 # Set BROWSER variable
 export BROWSER="firefox-developer-edition"
+
+### Powerlevel10k Instant Prompt
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi

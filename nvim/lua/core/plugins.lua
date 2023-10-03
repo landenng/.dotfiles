@@ -14,7 +14,8 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Add plugins here
 local plugins = {
-  { "catppuccin/nvim", as = "catppuccin" },
+  -- { "catppuccin/nvim", as = "catppuccin" },
+  { "rose-pine/neovim", as = "rose-pine" },
   'nvim-tree/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
   'nvim-treesitter/nvim-treesitter',

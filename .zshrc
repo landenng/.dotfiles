@@ -1,12 +1,12 @@
 ### Color Scheme Sourcing
-source ~/.config/nvim/schemes/shell/rose-pine-moon.sh
+source ~/.config/nvim/schemes/shell/dracula.sh
 
 ### Colors for exa and ls
-export LS_COLORS="$(vivid generate /usr/share/vivid/rose-pine-moon)"
+export LS_COLORS="$(vivid generate /usr/share/vivid/dracula.yml)"
 
 ### Zim Configuration
 # use catppuccin macchiato color scheme for zsh syntax highlighting
-source ~/.zim/schemes/catppuccin_mocha-zsh-syntax-highlighting.zsh
+source ~/.zim/schemes/dracula-zsh-syntax-highlighting.zsh
 
 # use 'degit' tool by default
 zstyle ':zim:zmodule' use 'degit'

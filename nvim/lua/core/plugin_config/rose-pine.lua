@@ -11,7 +11,8 @@ require('rose-pine').setup({
 
 	--- @usage string hex value or named color from rosepinetheme.com/palette
 	groups = {
-		background = 'base',
+		--- background = 'base',
+		background = '#14141b',
 		background_nc = '_experimental_nc',
 		panel = 'surface',
 		panel_nc = 'base',
@@ -40,7 +41,7 @@ require('rose-pine').setup({
 	-- Change specific vim highlight groups
 	-- https://github.com/rose-pine/neovim/wiki/Recipes
 	highlight_groups = {
-		ColorColumn = { bg = 'rose' },
+		ColorColumn = { bg = '#21222c' },
 
 		-- Blend colours against the "base" background
 		CursorLine = { bg = 'foam', blend = 10 },

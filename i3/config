@@ -490,11 +490,13 @@ set $babyblue       #c3eaff
 set $holoblue       #40f2f1
 set $mauve          #cba6f7
 set $rosewater      #f4dbd6
+set $pine           #3e8fb0
+set $base           #232136
 
 # define colors for windows:
 #class		             	border		bground		text		indicator	    child_border
-client.focused		    	$lightblue	$darkblue	$white		$mauve          $mauve
-client.unfocused	    	$darkblue	$darkblue	$grey		$rosewater      $rosewater
+client.focused		    	$lightblue	$darkblue	$white		$pine           $pine
+client.unfocused	    	$darkblue	$darkblue	$grey		$base           $base
 client.focused_inactive		$darkblue	$darkblue	$grey		$black		    $black
 client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 
@@ -566,7 +568,8 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/pastel-sky.jpg
+# exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/pastel-sky.jpg
+exec --no-startup-id sleep 1 && feh --bg-fill ~/pictures/space.png
 
 #####################################
 # Application menu handled by rofi: #
@@ -595,7 +598,7 @@ bindsym $mod+t exec rofi -show window \
 #		-config ~/.config/rofi/rofidmenu.rasi
 
 # flameshot keybind
-bindsym $mod+x exec flameshot gui -c -p ~/pictures/screenshot.png
+bindsym $mod+x exec flameshot gui -c
 
 ### screen placement
 exec --no-startup-id xrandr --output HDMI-A-0 --auto --left-of eDP

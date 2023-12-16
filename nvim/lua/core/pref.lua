@@ -40,3 +40,8 @@ vim.keymap.set('n', 'N', 'Nzz', { noremap = true, silent = true })
 vim.keymap.set('n', '*', '*zz', { noremap = true, silent = true })
 vim.keymap.set('n', '#', '#zz', { noremap = true, silent = true })
 vim.keymap.set('n', 'g*', 'g*zz', { noremap = true, silent = true })
+
+-- custom vim commands
+vim.cmd("command Paste execute \"write !curl -X POST https://api.pastes.dev/post " .. 
+        "-H 'Content-Type: text/\" . &ft . \"' --data-binary '@-' | jq -r '\\\"ht" .. 
+        "tps://pastes.dev/\\\" + .key'\"")

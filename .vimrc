@@ -1,4 +1,4 @@
-" This is effectively a simplified version of pref.lua
+" This is a simplified version of pref.lua
 " Download with:
 "     wget -O ~/.vimrc https://raw.githubusercontent.com/landennguyen/dotfiles/main/.vimrc
 

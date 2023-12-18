@@ -10,4 +10,4 @@ set completion-ignore-case on
 "\e[B": history-search-forward"
 
 ###---------------------- BASH KEYBINDS ----------------------###
-"\C-f":"cd /home/holo/dev/dotfiles\n"
+# "\C-f":"cd /home/holo/dev/dotfiles\n"

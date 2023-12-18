@@ -6,10 +6,11 @@ require("mason-lspconfig").setup({
   ensure_installed = {
     "lua_ls",
     "rust_analyzer",
+    "emmet_ls",
     "pyright",
-    "html",
-    "cssls",
-    "tsserver",
+    -- "html",
+    -- "cssls",
+    -- "tsserver",
     "jdtls",
     "omnisharp"
   }
@@ -37,23 +38,30 @@ require("lspconfig").lua_ls.setup {
 
 require("lspconfig").pyright.setup {
   on_attach = on_attach,
+  capabilities = capabilities,
   filetypes = {"python"},
 }
 
-require("lspconfig").html.setup {
+require("lspconfig").emmet_ls.setup {
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  filetypes = {"html", "css", "javascript"},
 }
 
-require("lspconfig").cssls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
-
-require("lspconfig").tsserver.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
+-- require("lspconfig").html.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities
+-- }
+-- 
+-- require("lspconfig").cssls.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities
+-- }
+-- 
+-- require("lspconfig").tsserver.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities
+-- }
 
 require("lspconfig").jdtls.setup {
   on_attach = on_attach,

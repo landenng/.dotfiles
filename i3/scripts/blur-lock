@@ -6,6 +6,8 @@ SCREENSHOT="scrot -z $PICTURE"
 BLUR="5x4"
 
 $SCREENSHOT
+dunstctl set-paused true
 convert $PICTURE -blur $BLUR $PICTURE
-i3lock -i $PICTURE
+i3lock -ni $PICTURE
+dunstctl set-paused false
 rm $PICTURE

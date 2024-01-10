@@ -20,7 +20,6 @@ alias python="python3"
 alias mkdir="mkdir -pv"
 alias fde="firefox-developer-edition"
 
-
 ###------------------------- FUNCTIONS -------------------------###
 mirrorc() {
     xrandr --output eDP --rate 60 --mode 1920x1080 --fb 1920x1080 --panning 1920x1080* --output DP-1-0 --mode 1920x1080 --same-as eDP

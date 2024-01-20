@@ -322,6 +322,7 @@ assign [class="Thunar"] $ws8
 assign [class="code"] $ws3
 assign [class="jetbrains-idea"] $ws3
 assign [class="thunderbird"] $ws9
+assign [class="steam"] $ws9
 #assign [class="TelegramDesktop"] $ws5
 
 # automatic set focus new window if it opens on another workspace than the current:
@@ -569,8 +570,8 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/gwen-stacy.png
-# exec --no-startup-id sleep 1 && feh --bg-fill ~/pictures/space.png
+# exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png
+exec --no-startup-id sleep 1 && feh --bg-fill ~/pictures/koi-fish.jpg
 
 #####################################
 # Application menu handled by rofi: #

@@ -20,7 +20,7 @@ vim.opt.relativenumber = true
 vim.opt.number = true
 
 -- permanent undo
-vim.opt.undodir = '/home/holo/.vimdid'
+vim.opt.undodir = os.getenv( "HOME" ) .. '/.vimdid'
 vim.opt.undofile = true
 
 -- color column at 80 characters

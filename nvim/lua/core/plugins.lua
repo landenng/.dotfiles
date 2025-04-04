@@ -14,15 +14,15 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Add plugins here
 local plugins = {
+  { "olimorris/onedarkpro.nvim", as = "onedarkpro" },
+  -- { "rose-pine/neovim", as = "rose-pine" },
   -- { "catppuccin/nvim", as = "catppuccin" },
-  { "rose-pine/neovim", as = "rose-pine" },
-  -- 'Mofiqul/dracula.nvim',
   'nvim-tree/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
   'nvim-treesitter/nvim-treesitter',
 
   -- rust
-  'simrat39/rust-tools.nvim',
+  -- 'simrat39/rust-tools.nvim',
 
   -- lsp integration
   'williamboman/mason.nvim',
@@ -35,11 +35,8 @@ local plugins = {
   'L3MON4D3/LuaSnip',
 
   -- vs-code like snippets
-  'saadparwaiz1/cmp_luasnip',
-  'rafamadriz/friendly-snippets',
-
-  -- fuzzy finder integration and file tree
-  -- 'vijaymarupudi/nvim-fzf'
+  -- 'saadparwaiz1/cmp_luasnip',
+  -- 'rafamadriz/friendly-snippets',
   {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.0',

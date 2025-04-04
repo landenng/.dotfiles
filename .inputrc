@@ -1,13 +1,10 @@
-###------------------------- COLORS -------------------------###
+# colors
 set colored-stats on
 
-###------------------- COMPLETION SETTINGS -------------------###
+# completion settings
 set show-all-if-ambiguous on
 set completion-ignore-case on
 
-###------------------ COMMAND HISTORY SEARCH ------------------###
+# command history search
 "\e[A": history-search-backward
 "\e[B": history-search-forward
-
-###---------------------- BASH KEYBINDS ----------------------###
-# "\C-f":"cd /home/holo/dev/dotfiles\n"

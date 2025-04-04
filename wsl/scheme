@@ -1,0 +1,25 @@
+# Adding this to the settings.json file on a Windows terminal provides One Dark Pro
+
+{
+    "background": "#242424",
+    "black": "#282C34",
+    "blue": "#61AFEF",
+    "brightBlack": "#5C6370",
+    "brightBlue": "#61AFEF",
+    "brightCyan": "#56B6C2",
+    "brightGreen": "#98C379",
+    "brightPurple": "#C678DD",
+    "brightRed": "#E06C75",
+    "brightWhite": "#FFFFFF",
+    "brightYellow": "#D19A66",
+    "cursorColor": "#FFFFFF",
+    "cyan": "#2BBAC5",
+    "foreground": "#ABB2BF",
+    "green": "#89CA78",
+    "name": "One Dark Pro",
+    "purple": "#D55FDE",
+    "red": "#EF596F",
+    "selectionBackground": "#FFFFFF",
+    "white": "#ABB2BF",
+    "yellow": "#E5C07B"
+}

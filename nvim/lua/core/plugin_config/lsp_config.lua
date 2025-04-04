@@ -5,14 +5,15 @@ require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = {
     "lua_ls",
-    "rust_analyzer",
-    "emmet_ls",
-    "pyright",
+    "gopls",
+    "pylsp",
+    -- "rust_analyzer",
+    -- "jdtls",
+    -- "emmet_ls",
     -- "html",
     -- "cssls",
     -- "tsserver",
-    "jdtls",
-    "omnisharp"
+    -- "omnisharp"
   }
 })
 
@@ -36,39 +37,44 @@ require("lspconfig").lua_ls.setup {
   capabilities = capabilities
 }
 
-require("lspconfig").pyright.setup {
+require("lspconfig").gopls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+require("lspconfig").pylsp.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = {"python"},
 }
 
-require("lspconfig").emmet_ls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  filetypes = {"html", "css", "javascript"},
-}
+-- require("lspconfig").emmet_ls.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+--   filetypes = {"html", "css", "javascript"},
+-- }
 
 -- require("lspconfig").html.setup {
 --   on_attach = on_attach,
 --   capabilities = capabilities
 -- }
--- 
+
 -- require("lspconfig").cssls.setup {
 --   on_attach = on_attach,
 --   capabilities = capabilities
 -- }
--- 
+
 -- require("lspconfig").tsserver.setup {
 --   on_attach = on_attach,
 --   capabilities = capabilities
 -- }
 
-require("lspconfig").jdtls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
+-- require("lspconfig").jdtls.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities
+-- }
 
-require("lspconfig").omnisharp.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
+-- require("lspconfig").omnisharp.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities
+-- }

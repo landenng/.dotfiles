@@ -15,12 +15,9 @@ function mkln () {
     ln -s "$(pwd)/$from" "$to"
 }
 
-mkln "i3"                  "$HOME/.config/i3"
-mkln "kitty"               "$HOME/.config/kitty"
 mkln "nvim"                "$HOME/.config/nvim"
-mkln "picom"               "$HOME/.config/picom"
-mkln "rofi"	   	           "$HOME/.config/rofi"
-mkln ".templates"          "$HOME/dev/.templates"
+# mkln "starship.toml"       "$HOME/.config/starship.toml"
 mkln ".vimrc"              "$HOME/.vimrc"
 mkln ".bashrc"             "$HOME/.bashrc"
 mkln ".inputrc"            "$HOME/.inputrc"
+mkln ".tmux.conf"          "$HOME/.tmux.conf"

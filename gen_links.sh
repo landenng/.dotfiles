@@ -15,9 +15,10 @@ function mkln () {
     ln -s "$(pwd)/$from" "$to"
 }
 
-mkln "nvim"                "$HOME/.config/nvim"
 # mkln "starship.toml"       "$HOME/.config/starship.toml"
+mkln "foot"                "$HOME/.config/foot"
 mkln ".vimrc"              "$HOME/.vimrc"
 mkln ".bashrc"             "$HOME/.bashrc"
 mkln ".inputrc"            "$HOME/.inputrc"
 mkln ".tmux.conf"          "$HOME/.tmux.conf"
+mkln "nvim"                "$HOME/.config/nvim"

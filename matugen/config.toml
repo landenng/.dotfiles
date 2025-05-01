@@ -1,0 +1,7 @@
+[config]
+
+[templates]
+
+hyprland = { input_path = '~/.config/matugen/templates/hyprland-colors.conf', output_path = '~/.config/hypr/colors.conf', post_hook = 'hyprctl reload' }
+waybar = { input_path = '~/.config/matugen/templates/colors.css', output_path = '~/.config/waybar/colors.css', post_hook = 'pkill -SIGUSR2 waybar' }
+kitty = { input_path = '~/.config/matugen/templates/kitty-colors.conf', output_path = '~/.config/kitty/colors.conf', post_hook = 'kitty @ set-colors -a -c ~/.config/kitty/colors.conf' }

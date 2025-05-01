@@ -17,9 +17,13 @@ function mkln () {
 
 # mkln "starship.toml"       "$HOME/.config/starship.toml"
 mkln "foot"                "$HOME/.config/foot"
+mkln "kitty"               "$HOME/.config/kitty"
 mkln ".vimrc"              "$HOME/.vimrc"
 mkln ".bashrc"             "$HOME/.bashrc"
 mkln ".inputrc"            "$HOME/.inputrc"
 mkln ".tmux.conf"          "$HOME/.tmux.conf"
 mkln "nvim"                "$HOME/.config/nvim"
+mkln "hypr"                "$HOME/.config/hypr"
+mkln "waybar"              "$HOME/.config/waybar"
+mkln "matugen"             "$HOME/.config/matugen"
 mkln "sway"                "$HOME/.config/sway"

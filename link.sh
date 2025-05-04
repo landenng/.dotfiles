@@ -8,7 +8,7 @@ function mkln () {
 
     if ! [ -L "$to" ]; then # Move if it is not a link
         mv "$to" "$to_OLD" > /dev/null && echo "Moved $to to $to_OLD"
-    else # Otherwise, yeet it
+    else # Otherwise, take it out back
         target="$(readlink -f "$to")"
         rm "$to" && echo "Removed previous link ${to/$HOME/~} -> ${target/$HOME/~}"
     fi
@@ -16,14 +16,10 @@ function mkln () {
 }
 
 # mkln "starship.toml"       "$HOME/.config/starship.toml"
-mkln "foot"                "$HOME/.config/foot"
-mkln "kitty"               "$HOME/.config/kitty"
 mkln ".vimrc"              "$HOME/.vimrc"
 mkln ".bashrc"             "$HOME/.bashrc"
 mkln ".inputrc"            "$HOME/.inputrc"
-mkln ".tmux.conf"          "$HOME/.tmux.conf"
 mkln "nvim"                "$HOME/.config/nvim"
+mkln "kitty"               "$HOME/.config/kitty"
 mkln "hypr"                "$HOME/.config/hypr"
 mkln "waybar"              "$HOME/.config/waybar"
-mkln "matugen"             "$HOME/.config/matugen"
-mkln "sway"                "$HOME/.config/sway"

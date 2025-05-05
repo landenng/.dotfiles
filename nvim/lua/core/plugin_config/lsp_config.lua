@@ -5,8 +5,9 @@ require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = {
     "lua_ls",
-    "gopls",
     "pylsp",
+    "clangd",
+    -- "gopls",
     -- "rust_analyzer",
     -- "jdtls",
     -- "emmet_ls",
@@ -37,16 +38,22 @@ require("lspconfig").lua_ls.setup {
   capabilities = capabilities
 }
 
-require("lspconfig").gopls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
 require("lspconfig").pylsp.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = {"python"},
 }
+
+require("lspconfig").clangd.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"c"},
+}
+
+-- require("lspconfig").gopls.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+-- }
 
 -- require("lspconfig").emmet_ls.setup {
 --   on_attach = on_attach,

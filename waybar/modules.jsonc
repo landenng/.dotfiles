@@ -3,11 +3,9 @@
         "disable-scroll": true,
         "all-outputs": true,
         "format": "{icon}",
-        // "format": "< %g >",
-        // "format_focused" : "< %g ● >",
         "format-icons": {
-            "active": "",
-            "default": ""
+            "active": "",
+            "default": ""
         }
     },
     "clock": {
@@ -46,14 +44,14 @@
     },
     // Harddisk space used
     "disk": {
-      "format": "  {percentage_used}% ",
+      "format": "   {percentage_used}% ",
       "path": "/",
     }, 
     "cpu": {
-        "format": " {usage: >3}% ",
+        "format": " {usage:>3}% ",
     },
     "memory": {
-        "format": " {: >3}%",
+        "format": " {:>3}%",
     },
     // Put the above together
     "group/hardware": {

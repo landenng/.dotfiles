@@ -12,37 +12,21 @@ window#waybar {
 
 #workspaces {
     background: @background;
-    margin: 5px 5px 5px 5px;
-    padding: 4px 1px;
-    border-radius: 15px;
-    font-weight: normal;
-    font-style: normal;
+    color: @brightWhite;
+    border-radius: 10px;
+    margin: 8px 10px;
+    padding: 0 5px 0 0;
 }
 
 #workspaces button {
-    padding: 0px 10px;
-    margin: 0px 3px;
-    border-radius: 12px;
-    background-color: @white;
-    transition: all 0.3s ease-in-out;
-    opacity:0.4;
+    background-color: transparent;
+    color: @brightWhite;
 }
 
-#workspaces button.active {
-    background-color: @white;
-    border-radius: 10px;
-    min-width: 30px;
-    background-size: 400% 400%;
-    transition: all 0.3s ease-in-out;
-    opacity:1.0;
-}
 
 #workspaces button:hover {
-    background-color: @brightWhite;
-    color: #cdd6f4;
-    border-radius: 10px;
-    min-width: 30px;
-    background-size: 400% 400%;
+    background: rgba(0, 0, 0, 0.2);
+    border: transparent;
 }
 
 #custom-arch,
@@ -61,19 +45,17 @@ window#waybar {
 #cpu,
 #memory {
     color: @brightWhite;
-    padding: 1px;
+    padding: 0 1px;
 }
 
 #clock,
 #battery,
 #temperature,
 #network,
-#wireplumber,
-#custom-pacman {
-    padding: 5px 8px;
+#wireplumber {
+    padding: 0 8px;
     border-style: solid;
     background-color: @background;
-    opacity: 1;
     margin: 8px 0;
 }
 
@@ -86,6 +68,7 @@ window#waybar {
 #wireplumber {
     color: @brightWhite;
     border-radius: 10px 0 0 10px;
+    padding: 0 5px 0 8px;
 }
 
 #wireplumber.muted {
@@ -95,7 +78,8 @@ window#waybar {
 #battery {
     color: @brightWhite;
     border-radius: 0 10px 10px 0;
-    margin-right: 10px;
+    margin-right: 5px;
+    padding: 0 8px 0 5px;
 }
 
 #battery.charging {
@@ -110,13 +94,11 @@ window#waybar {
 
 #battery.warning:not(.charging) {
     color: @yellow;
-    /* border-bottom: 2px solid #81a1c1; */
 }
 
 
 #battery.critical:not(.charging) {
     color: #bf616a;
-    /* border-bottom: 2px solid #bf616a; */
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -124,15 +106,15 @@ window#waybar {
     animation-direction: alternate;
 }
 
-#network.disabled {
-    color: #bf616a;
-}
-
 #network {
     border-radius: 10px;
-    margin-right: 5px;
+    margin: 8px 10px 8px 5px;
+}
+
+#network.disabled {
+    color: @brightRed;
 }
 
 #network.disconnected {
-    color: @on_error;
+    color: @brightRed;
 }

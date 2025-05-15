@@ -8,6 +8,8 @@ export PATH=$PATH:/usr/local/go/bin
 
 # ALIASES
 alias ls="eza -g --icons"
+alias ll="eza -gl --icons"
+alias lla="eza -gla --icons"
 
 # STARSHIP
 eval "$(starship init bash)"

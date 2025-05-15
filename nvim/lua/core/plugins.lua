@@ -24,6 +24,8 @@ local plugins = {
   -- rust
   -- 'simrat39/rust-tools.nvim',
 
+  { "kiyoon/jupynium.nvim", build = "python -m pip install --user ." },
+
   -- lsp integration
   'williamboman/mason.nvim',
   'williamboman/mason-lspconfig.nvim',

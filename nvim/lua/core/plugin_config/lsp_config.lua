@@ -4,9 +4,10 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = {
-    "lua_ls",
-    "pylsp",
+    "pyright",
+    "sqlls",
     "clangd",
+    "lua_ls",
     -- "gopls",
     -- "rust_analyzer",
     -- "jdtls",
@@ -33,21 +34,26 @@ end
 -- For autocompletion and snippets
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-require("lspconfig").lua_ls.setup {
+require("lspconfig").clangd.setup {
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = capabilities,
+  filetypes = {"c"},
 }
 
-require("lspconfig").pylsp.setup {
+require("lspconfig").pyright.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = {"python"},
 }
 
-require("lspconfig").clangd.setup {
+require("lspconfig").sqlls.setup {
   on_attach = on_attach,
-  capabilities = capabilities,
-  filetypes = {"c"},
+  capabilities = capabilities
+}
+
+require("lspconfig").lua_ls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
 }
 
 -- require("lspconfig").gopls.setup {

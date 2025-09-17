@@ -22,7 +22,7 @@ local plugins = {
   'nvim-treesitter/nvim-treesitter',
 
   -- rust
-  -- 'simrat39/rust-tools.nvim',
+  'simrat39/rust-tools.nvim',
 
   { "kiyoon/jupynium.nvim", build = "python -m pip install --user ." },
 

@@ -4,14 +4,14 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = {
+    "rust_analyzer",
+    "emmet_ls",
     "pyright",
     "sqlls",
     "clangd",
     "lua_ls",
     -- "gopls",
-    -- "rust_analyzer",
     -- "jdtls",
-    -- "emmet_ls",
     -- "html",
     -- "cssls",
     -- "tsserver",
@@ -40,6 +40,12 @@ require("lspconfig").clangd.setup {
   filetypes = {"c"},
 }
 
+require("lspconfig").emmet_ls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"html", "css", "javascript"},
+}
+
 require("lspconfig").pyright.setup {
   on_attach = on_attach,
   capabilities = capabilities,
@@ -59,12 +65,6 @@ require("lspconfig").lua_ls.setup {
 -- require("lspconfig").gopls.setup {
 --   on_attach = on_attach,
 --   capabilities = capabilities,
--- }
-
--- require("lspconfig").emmet_ls.setup {
---   on_attach = on_attach,
---   capabilities = capabilities,
---   filetypes = {"html", "css", "javascript"},
 -- }
 
 -- require("lspconfig").html.setup {

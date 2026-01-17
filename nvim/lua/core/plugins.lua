@@ -24,7 +24,7 @@ local plugins = {
   -- rust
   'simrat39/rust-tools.nvim',
 
-  { "kiyoon/jupynium.nvim", build = "python -m pip install --user ." },
+  -- { "kiyoon/jupynium.nvim", build = "python -m pip install --user ." },
 
   -- lsp integration
   'williamboman/mason.nvim',
@@ -37,17 +37,17 @@ local plugins = {
   'L3MON4D3/LuaSnip',
 
   -- vs-code like snippets
-  -- 'saadparwaiz1/cmp_luasnip',
-  -- 'rafamadriz/friendly-snippets',
-  {
-    'nvim-telescope/telescope.nvim',
-    tag = '0.1.0',
-    dependencies = { {'nvim-lua/plenary.nvim'} }
-  },
-  {
-    "nvim-telescope/telescope-file-browser.nvim",
-    dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
-  },
+  'saadparwaiz1/cmp_luasnip',
+  'rafamadriz/friendly-snippets',
+  -- {
+  --   'nvim-telescope/telescope.nvim',
+  --   tag = '0.1.0',
+  --   dependencies = { {'nvim-lua/plenary.nvim'} }
+  -- },
+  -- {
+  --   "nvim-telescope/telescope-file-browser.nvim",
+  --   dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+  -- },
 }
 
 local opts = {}

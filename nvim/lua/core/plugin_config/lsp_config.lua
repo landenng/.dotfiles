@@ -5,17 +5,12 @@ require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = {
     "rust_analyzer",
-    "emmet_ls",
-    "pyright",
-    "sqlls",
-    "clangd",
     "lua_ls",
-    -- "gopls",
+    -- "emmet_ls",
+    -- "pyright",
+    -- "sqlls",
+    -- "clangd",
     -- "jdtls",
-    -- "html",
-    -- "cssls",
-    -- "tsserver",
-    -- "omnisharp"
   }
 })
 
@@ -33,61 +28,43 @@ end
 
 -- For autocompletion and snippets
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-
-require("lspconfig").clangd.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  filetypes = {"c"},
+local base_config = { 
+    on_attach = on_attach,
+    capabilities = capabilities
 }
 
-require("lspconfig").emmet_ls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  filetypes = {"html", "css", "javascript"},
-}
+vim.lsp.config("rust-analyzer", base_config)
+vim.lsp.config("lua_ls", base_config)
+-- vim.lsp.config("clangd", base_config, { filetypes = { "c" } })
+-- vim.lsp.config("emmet_ls", base_config, { filetypes = { "html", "css", "javascript" } })
+-- vim.lsp.config("pyright", base_config, { filetypes = { "python" } })
+-- vim.lsp.config("jdtls", base_config)
 
-require("lspconfig").pyright.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  filetypes = {"python"},
-}
 
-require("lspconfig").sqlls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
-
-require("lspconfig").lua_ls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
-
--- require("lspconfig").gopls.setup {
+-- require("lspconfig").clangd.setup {
 --   on_attach = on_attach,
 --   capabilities = capabilities,
+--   filetypes = {"c"},
 -- }
-
--- require("lspconfig").html.setup {
+-- 
+-- require("lspconfig").emmet_ls.setup {
 --   on_attach = on_attach,
---   capabilities = capabilities
+--   capabilities = capabilities,
+--   filetypes = {"html", "css", "javascript"},
 -- }
-
--- require("lspconfig").cssls.setup {
+-- 
+-- require("lspconfig").pyright.setup {
 --   on_attach = on_attach,
---   capabilities = capabilities
+--   capabilities = capabilities,
+--   filetypes = {"python"},
 -- }
-
--- require("lspconfig").tsserver.setup {
+-- 
+-- require("lspconfig").sqlls.setup {
 --   on_attach = on_attach,
 --   capabilities = capabilities
 -- }
 
 -- require("lspconfig").jdtls.setup {
---   on_attach = on_attach,
---   capabilities = capabilities
--- }
-
--- require("lspconfig").omnisharp.setup {
 --   on_attach = on_attach,
 --   capabilities = capabilities
 -- }

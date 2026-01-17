@@ -29,14 +29,14 @@ window#waybar {
     border: transparent;
 }
 
-#custom-arch,
+#custom-logo,
 #disk,
 #cpu,
 #memory {
     color: @background;
 }
 
-#custom-arch {
+#custom-logo {
     font-size: 25;
     color: @brightWhite;
 }

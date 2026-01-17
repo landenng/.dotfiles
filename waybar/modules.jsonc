@@ -1,5 +1,5 @@
 {
-    "hyprland/workspaces": {
+    "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "format": "{icon}",
@@ -37,9 +37,11 @@
         "interval": 1
     },
 
+    // 󰘨 
+    //  
     // System modules
-    "custom/arch": {
-        "format": "  ",
+    "custom/logo": {
+        "format": "  ",
         "tooltip": false
     },
     // Harddisk space used
@@ -62,7 +64,7 @@
             "transition-left-to-right": true
         },        
         "modules": [
-            "custom/arch",
+            "custom/logo",
             "disk",
             "cpu",
             "memory"

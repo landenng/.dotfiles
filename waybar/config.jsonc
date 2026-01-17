@@ -9,7 +9,7 @@
         "clock"
     ],
 
-    "modules-center": ["hyprland/workspaces"],
+    "modules-center": ["sway/workspaces"],
 
     "modules-right": [
         "wireplumber",

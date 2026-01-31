@@ -37,11 +37,9 @@
         "interval": 1
     },
 
-    // 󰘨 
-    //  
     // System modules
     "custom/logo": {
-        "format": "  ",
+        "format": " 󰣇 ",
         "tooltip": false
     },
     // Harddisk space used

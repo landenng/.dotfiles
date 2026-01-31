@@ -10,3 +10,4 @@ export PATH=$PATH:/home/landen/.cargo/bin:/usr/local/go/bin
 alias ll="ls -l --color=auto"
 alias lla="ls -la --color=auto"
 alias vi="nvim"
+. "$HOME/.cargo/env"

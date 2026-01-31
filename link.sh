@@ -15,15 +15,11 @@ function mkln () {
     ln -s "$(pwd)/$from" "$to"
 }
 
-# mkln "starship.toml"       "$HOME/.config/starship.toml"
 mkln ".vimrc"              "$HOME/.vimrc"
 mkln ".bashrc"             "$HOME/.bashrc"
 mkln ".inputrc"            "$HOME/.inputrc"
 mkln "nvim"                "$HOME/.config/nvim"
 mkln ".tmux.conf"          "$HOME/.tmux.conf"
-mkln "waybar"              "$HOME/.config/waybar"
-mkln "foot"     		   "$HOME/.config/foot"
-mkln "sway"     		   "$HOME/.config/sway"
-# mkln "custom.palette"      "$HOME/.local/share/org.gnome.Ptyxis/palettes/custom.palette"
-# mkln "kitty"               "$HOME/.config/kitty"
-# mkln "hypr"                "$HOME/.config/hypr"
+mkln "alacritty"           "$HOME/.config/alacritty"
+mkln "niri"                "$HOME/.config/niri"
+mkln "noctalia"            "$HOME/.config/noctalia"

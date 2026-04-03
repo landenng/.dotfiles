@@ -1,7 +1,7 @@
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'rose-pine',
+    theme = 'github_dark_default',
   },
   sections = {
     lualine_a = {

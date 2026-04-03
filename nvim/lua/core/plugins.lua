@@ -14,9 +14,12 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Add plugins here
 local plugins = {
-  -- { "olimorris/onedarkpro.nvim", as = "onedarkpro" },
-  { "rose-pine/neovim", as = "rose-pine" },
-  -- { "catppuccin/nvim", as = "catppuccin" },
+  {
+    'projekt0n/github-nvim-theme',
+    name = 'github-theme',
+    lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000, -- make sure to load this before all the other start plugins
+  },
   'nvim-tree/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
   'nvim-treesitter/nvim-treesitter',

@@ -1,4 +1,4 @@
-require("core.plugin_config.rose-pine")
+require("core.plugin_config.github")
 require("core.plugin_config.lualine")
 require("core.plugin_config.lsp_config")
 -- require("core.plugin_config.treesitter")

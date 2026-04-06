@@ -9,12 +9,6 @@ vim.opt.autowrite = false
 vim.opt.autoread = true
 vim.opt.wrap = false
 
--- use spaces for tabs
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.shiftround = true
-vim.opt.expandtab = true
-
 -- set rel number and number
 vim.opt.relativenumber = true
 vim.opt.number = true

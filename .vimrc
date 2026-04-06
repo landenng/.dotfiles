@@ -18,11 +18,6 @@ set signcolumn=yes
 set undodir=~/.vimdid
 set undofile
 
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-set expandtab
-
 " Search results centered please
 nnoremap <silent> n nzz
 nnoremap <silent> N Nzz
